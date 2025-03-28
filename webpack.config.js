@@ -28,6 +28,7 @@ module.exports = (env, argv) => {
             minimize: isProd
         },
         devServer: {
+            allowedHosts: 'all',
             static: [
                 {
                     directory: path.resolve(__dirname, 'static'),

@@ -12,16 +12,17 @@
     "defaultBackgroundLayers": [],
     "defaultSearchProviders": ["coordinates"],
     "defaultMapCrs": "EPSG:3857",
-    "defaultTheme": "qwc_demo",
+    "defaultTheme": "elgin",
     "themes": {
         "items": [
             {
-                "id": "qwc_demo",
-                "title": "QWC Demo Theme",
-                "url": "http://qwc2.sourcepole.ch/ows/qwc_demo",
-                "attribution": "Demo attribution",
+                "id": "elgin",
+                "title": "Elgin project Theme",
+                "url": "https://geomapper.vistacaretech.com/cgi-bin/qgis_mapserv.fcgi?MAP=/home/qgis/projects/elgin.qgs&",
+                "attribution": "Elgin project",
                 "attributionUrl": "https://example.com/",
                 "backgroundLayers": [
+                    {"name": "Satellite", "printLayer": "osm_bg", "visibility": true},
                     {"name": "bluemarble", "printLayer": "bluemarble_bg", "visibility": true},
                     {"name": "mapnik", "printLayer": "osm_bg"}
                 ],
@@ -61,6 +62,12 @@
             }
         ],
         "backgroundLayers": [
+            {
+                "name": "Satellite",
+                "title": "Satellite",
+                "type": "xyz",
+                "url":"http://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}"
+              },
             {
                 "name": "mapnik",
                 "title": "Open Street Map",
