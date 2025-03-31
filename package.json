@@ -108,7 +108,7 @@
     },
     "scripts": {
         "prod": "npm run tsupdate && npm run themesconfig && npm run iconfont && webpack --mode production --progress",
-        "start": "npm run tsupdate && npm run themesconfig && npm run iconfont && webpack serve --mode development --progress --host 0.0.0.0 --port 8081",
+        "start": "npm run tsupdate && npm run themesconfig && npm run iconfont && webpack serve --mode development --progress --host 0.0.0.0 --port 8080",
         "iconfont": "node scripts/makeIconkit.js",
         "themesconfig": "node scripts/themesConfig.js || :",
         "tsupdate": "node scripts/updateTranslations.js",
