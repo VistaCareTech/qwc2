@@ -23,18 +23,24 @@
                 "attributionUrl": "https://example.com/",
                 "backgroundLayers": [
                     {"name": "Satellite", "printLayer": "osm_bg", "visibility": true},
-                    {"name": "bluemarble", "printLayer": "bluemarble_bg", "visibility": true},
+                    {"name": "bluemarble", "printLayer": "bluemarble_bg"},
                     {"name": "mapnik", "printLayer": "osm_bg"}
                 ],
                 "searchProviders": [
                     "coordinates",
                     "nominatim",
                     {
-                        "provider": "fulltext",
+                        "provider": "qgis",
                         "params": {
-                            "default": ["ne_10m_admin_0_countries"]
+                          "title": "Cables search",
+                          "expression": {
+                            "cables": "\"id\" = $ID$"
+                          },
+                          "fields": {
+                            "ID": {"label": "ID:", "type": "number", "options": {"min": 0}}
+                          }
                         }
-                    }
+                      }
                 ],
                 "mapCrs": "EPSG:3857",
                 "additionalMouseCrs": [],
