@@ -86,7 +86,9 @@ module.exports = (env, argv) => {
                     exclude: /node_modules(\\|\/)(?!qwc2)/,
                     use: {
                         loader: 'babel-loader',
-                        options: { babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', 'qwc2')] }
+                        options: { 
+                            presets: ['@babel/env','@babel/preset-react'],
+                            babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', 'qwc2')] }
                     }
                 },
                 {
