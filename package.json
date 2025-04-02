@@ -8,6 +8,7 @@
     "dependencies": {
         "@babel/core": "^7.26.0",
         "@babel/eslint-parser": "^7.25.9",
+        "@babel/plugin-syntax-jsx": "^7.25.9",
         "@babel/plugin-transform-class-properties": "^7.25.9",
         "@babel/plugin-transform-object-rest-spread": "^7.25.9",
         "@babel/preset-env": "^7.26.0",
@@ -84,6 +85,7 @@
     "devDependencies": {
         "@babel/core": "^7.26.0",
         "@babel/eslint-parser": "^7.25.9",
+        "@babel/plugin-syntax-jsx": "^7.25.9",
         "@babel/plugin-transform-class-properties": "^7.25.9",
         "@babel/plugin-transform-object-rest-spread": "^7.25.9",
         "@babel/preset-env": "^7.26.0",
